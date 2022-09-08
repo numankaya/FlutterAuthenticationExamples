@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_dersleri/firebase_options.dart';
+import 'package:flutter_firebase_dersleri/firestore_islemleri.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 void main() async {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Firebase Tutorial'),
+      home: FirestoreIslemleri(),
     );
   }
 }
